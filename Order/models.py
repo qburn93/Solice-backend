@@ -8,8 +8,7 @@ class SolarPanel(models.Model):
         ('Polycrystalline', 'Polycrystalline'),
     )
     name = models.CharField(max_length=200, choices=TYPES)
-    description = models.TextField()
-    image = models.ImageField(upload_to='solar_panels/')
+    image = models.ImageField(upload_to='solar_panels/')  # new line
     square_meters = models.PositiveIntegerField(default=0)
 
     def calculate_price(self):
@@ -21,6 +20,7 @@ class SolarPanel(models.Model):
             return self.square_meters * 70
 
     def __str__(self):
+        return self.name
         return self.name
 
 class Order(models.Model):
