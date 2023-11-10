@@ -3,10 +3,12 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from rest_framework import routers
 from drf_api.views import OrderViewSet, SolarPanelViewSet
+from profiles.views import ProfileViewSet
 
 router = routers.DefaultRouter()
 router.register(r'orders', OrderViewSet)
 router.register(r'solar_panels', SolarPanelViewSet)
+router.register(r'profiles', ProfileViewSet)
 
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
