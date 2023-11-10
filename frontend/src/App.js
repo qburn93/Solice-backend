@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import HeroVideo from './HeroVideo';
+import './App.css';
 import './styles/MainPage.css';
 import SolarPanel from './SolarPanel';
 import Order from './Order';
@@ -28,9 +30,16 @@ function App() {
         </nav>
         <Switch>
           <Route path="/" exact>
+          <HeroVideo />
             <div className="main-page">
-              <h1>Welcome to Our Solar Panel Store</h1>
-              <p>We offer high-quality solar panels for your home and business.</p>
+            <h1>Welcome to Our Solar Panel Store</h1>
+            <p>We offer high-quality solar panels for your home and business.</p>
+            <h2>Benefits of Solar Energy</h2>
+            <p>Solar energy is renewable, reduces electricity bills, and has diverse applications.</p>
+            <h2>Our Process</h2>
+            <p>We provide a seamless ordering and installation process to ensure you get the best experience.</p>
+            <h2>Testimonials</h2>
+            <p>Read testimonials from our satisfied customers.</p>
               <div className="solar-panels">
                 {solarPanels.map(panel => (
                   <div key={panel.id} className="solar-panel">
