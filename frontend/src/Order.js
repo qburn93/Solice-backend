@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import OrderFinal from './OrderFinal'; // Import OrderFinal
 
 function Order() {
     const [orders, setOrders] = useState([]);
@@ -12,6 +13,7 @@ function Order() {
 
     return (
         <div>
+            <OrderFinal /> {/* Include OrderFinal */}
             {orders.map(order => (
                 <div key={order.id}>
                     <h2>Order {order.id}</h2>

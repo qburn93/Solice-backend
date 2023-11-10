@@ -91,3 +91,15 @@ h2 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/*Order page*/
+.solar-panels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.solar-panel {
+  border: 1px solid #ccc;
+  padding: 20px;
+}

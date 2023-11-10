@@ -5,8 +5,8 @@ import HeroVideo from './HeroVideo';
 import BenefitsGrid from './BenefitsGrid';
 import './App.css';
 import './styles/MainPage.css';
+import OrderFinal from './OrderFinal';
 import SolarPanel from './SolarPanel';
-import Order from './Order';
 import Profile from './Profile';
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
             </div>
           </Route>
           <Route path="/solar_panels" component={SolarPanel} />
-          <Route path="/orders" component={Order} />
+          <Route path="/orders" component={OrderFinal} />
           <Route path="/profiles" component={Profile} />
         </Switch>
       </div>
