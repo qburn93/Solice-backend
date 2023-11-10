@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import HeroVideo from './HeroVideo';
+import BenefitsGrid from './BenefitsGrid';
 import './App.css';
 import './styles/MainPage.css';
 import SolarPanel from './SolarPanel';
@@ -31,6 +32,7 @@ function App() {
         <Switch>
           <Route path="/" exact>
           <HeroVideo />
+          <BenefitsGrid />
             <div className="main-page">
             <h1>Welcome to Our Solar Panel Store</h1>
             <p>We offer high-quality solar panels for your home and business.</p>

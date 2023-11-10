@@ -46,14 +46,19 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: left;
-  color: #fff;
+  color: #000;
 }
+
+.main-page h1 {
+  text-align: center;
+}
+
 
 h2 {
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #fff;
+  color: #000;
 }
 
 #logo {
